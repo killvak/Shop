@@ -1,0 +1,6 @@
+framework module Pods_BenefactorTests {
+  umbrella header "Pods-BenefactorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

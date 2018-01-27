@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Kni-fX-bhd" customClass="UserTableViewCell" customModule="Benefactor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kni-fX-bhd" id="Xun-EQ-k3j">
+                <frame key="frameInset" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSI-BS-1VT">
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mih-Xv-Mc8"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VzC-7q-GBu">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VzC-7q-GBu" secondAttribute="height" id="mqi-io-c0k"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1u-Z0-xKS">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VzC-7q-GBu" firstAttribute="top" secondItem="Xun-EQ-k3j" secondAttribute="top" constant="8" id="6D4-3L-X5i"/>
+                    <constraint firstItem="qSI-BS-1VT" firstAttribute="leading" secondItem="Xun-EQ-k3j" secondAttribute="leading" constant="8" id="Smv-gN-zMM"/>
+                    <constraint firstItem="A1u-Z0-xKS" firstAttribute="centerY" secondItem="VzC-7q-GBu" secondAttribute="centerY" id="Uhi-q3-2CH"/>
+                    <constraint firstAttribute="trailing" secondItem="qSI-BS-1VT" secondAttribute="trailing" constant="8" id="YZs-1j-rn3"/>
+                    <constraint firstAttribute="bottom" secondItem="qSI-BS-1VT" secondAttribute="bottom" id="hyr-jx-RoT"/>
+                    <constraint firstItem="A1u-Z0-xKS" firstAttribute="leading" secondItem="VzC-7q-GBu" secondAttribute="trailing" constant="7.5" id="wCz-pZ-ySS"/>
+                    <constraint firstItem="VzC-7q-GBu" firstAttribute="leading" secondItem="Xun-EQ-k3j" secondAttribute="leading" constant="8" id="xvQ-WT-gSf"/>
+                    <constraint firstAttribute="bottom" secondItem="VzC-7q-GBu" secondAttribute="bottom" constant="8" id="yxY-nq-FeM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="VzC-7q-GBu" id="qfE-l1-MyH"/>
+                <outlet property="nameLabel" destination="A1u-Z0-xKS" id="nZ0-x3-q25"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

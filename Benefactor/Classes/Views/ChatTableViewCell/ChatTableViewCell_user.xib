@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="148" id="KGk-i7-Jjw" customClass="ChatTableViewCell" customModule="Benefactor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="DqT-Rv-lTV" userLabel="Rounded Rectangle 12">
+                        <subviews>
+                            <label opaque="NO" contentMode="center" text="you" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qju-Pz-e7n" userLabel="you">
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="124" label=""/>
+                                <fontDescription key="fontDescription" name="Montserrat" family="Montserrat" pointSize="15.739589691162109"/>
+                                <color key="textColor" red="0.16862745098039217" green="0.69803921568627447" blue="0.92941176470588238" alpha="1" colorSpace="deviceRGB"/>
+                            </label>
+                            <label opaque="NO" contentMode="center" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="sure " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" translatesAutoresizingMaskIntoConstraints="NO" id="4xs-0s-Dyc" userLabel="sure , give your contact and i will tell you my location and ti">
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="122" label=""/>
+                                <fontDescription key="fontDescription" name="Montserrat" family="Montserrat" pointSize="17.044000625610352"/>
+                                <color key="textColor" red="0.40784313729999999" green="0.4431372549" blue="0.59215686270000001" alpha="1" colorSpace="deviceRGB"/>
+                            </label>
+                            <label opaque="NO" contentMode="center" text="11:06 AM" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" translatesAutoresizingMaskIntoConstraints="NO" id="P2i-VQ-aUX" userLabel="11:06 AM">
+                                <accessibility key="accessibilityConfiguration" hint="" identifier="126" label=""/>
+                                <fontDescription key="fontDescription" name="Montserrat" family="Montserrat" pointSize="13.130780220031738"/>
+                                <color key="textColor" red="0.63529411764705879" green="0.6705882352941176" blue="0.76862745098039209" alpha="1" colorSpace="deviceRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <accessibility key="accessibilityConfiguration" hint="" identifier="120" label=""/>
+                        <constraints>
+                            <constraint firstItem="Qju-Pz-e7n" firstAttribute="top" secondItem="DqT-Rv-lTV" secondAttribute="top" constant="16" id="2Jz-Cx-yBb"/>
+                            <constraint firstItem="P2i-VQ-aUX" firstAttribute="centerY" secondItem="Qju-Pz-e7n" secondAttribute="centerY" id="5xH-OT-aiT"/>
+                            <constraint firstAttribute="trailing" secondItem="4xs-0s-Dyc" secondAttribute="trailing" constant="8" id="JUF-Ae-fx1"/>
+                            <constraint firstItem="Qju-Pz-e7n" firstAttribute="leading" secondItem="DqT-Rv-lTV" secondAttribute="leading" constant="16" id="PAr-e4-6Ku"/>
+                            <constraint firstItem="4xs-0s-Dyc" firstAttribute="leading" secondItem="Qju-Pz-e7n" secondAttribute="leading" id="W4n-Ti-NJi"/>
+                            <constraint firstAttribute="bottom" secondItem="4xs-0s-Dyc" secondAttribute="bottom" constant="16" id="pO4-2j-8Es"/>
+                            <constraint firstItem="4xs-0s-Dyc" firstAttribute="top" secondItem="Qju-Pz-e7n" secondAttribute="bottom" constant="8" id="uRS-EG-xHl"/>
+                            <constraint firstItem="P2i-VQ-aUX" firstAttribute="leading" secondItem="Qju-Pz-e7n" secondAttribute="trailing" constant="8" id="yuj-SE-K2b"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="17.629999160766602"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOy-dU-e6q">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="l6D-Y2-zCL"/>
+                            <constraint firstAttribute="height" constant="50" id="v2R-yE-JWP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="DqT-Rv-lTV" secondAttribute="trailing" constant="77" id="QFp-JK-6ml"/>
+                    <constraint firstItem="XOy-dU-e6q" firstAttribute="left" secondItem="DqT-Rv-lTV" secondAttribute="right" constant="16" id="XvQ-Vm-BxB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="DqT-Rv-lTV" secondAttribute="bottom" constant="27.5" id="lwy-CZ-jTg"/>
+                    <constraint firstItem="DqT-Rv-lTV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="pLL-ds-jCG"/>
+                    <constraint firstItem="XOy-dU-e6q" firstAttribute="centerY" secondItem="DqT-Rv-lTV" secondAttribute="bottom" id="sZL-aA-dFD"/>
+                    <constraint firstItem="DqT-Rv-lTV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vBG-zM-uGi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageLabel" destination="4xs-0s-Dyc" id="l4W-4H-8L5"/>
+                <outlet property="timeLabel" destination="P2i-VQ-aUX" id="7kI-MC-KXq"/>
+                <outlet property="userImageView" destination="XOy-dU-e6q" id="w0J-rb-diE"/>
+                <outlet property="userNameLabel" destination="Qju-Pz-e7n" id="Oa6-LN-HH4"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="106"/>
+        </tableViewCell>
+    </objects>
+</document>
